@@ -27,10 +27,7 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
-
-      - name: Fix permissions
-        run: chmod +x node_modules/.bin/vite
+        run: npm install
 
       - name: Build
         run: npm run build
